@@ -29,7 +29,7 @@ Spotted an image you'd love to share? The application allows for image sharing. 
 </table> 
 
 ## Live link
-Visit the application on  .
+Visit the application on  https://lagalleria.herokuapp.com/.
 
 ## Development
 To make advancements/modifications, follow these steps:

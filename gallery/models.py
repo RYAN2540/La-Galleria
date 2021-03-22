@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length = 30)
 
@@ -81,3 +80,6 @@ class Image(models.Model):
     @classmethod
     def display_all_images(cls):
         return cls.objects.all()
+
+    class Meta:
+        ordering = ['-post_date']

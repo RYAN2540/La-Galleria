@@ -98,11 +98,23 @@ nav {
     margin-right: 2%;
 }
 
+blockquote {
+    border-left: 0 !important;
+}
+
+blockquote footer {
+    color: orangered;
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
     grid-gap: 20px;
     grid-auto-rows: auto;
+}
+
+.img-thumbnail {
+    cursor: pointer !important;
 }
 
 img {

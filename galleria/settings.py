@@ -46,9 +46,9 @@ INSTALLED_APPS = [
 ]
 
 cloudinary.config(
-    cloud_name="durqws6pc",
-    api_key="622926572274923",
-    api_secret="q-wI_Li-iA52EcvFohyYr6Nd8E4",
+    cloud_name=config('CLOUD_NAME'),
+    api_key=config('API_KEY'),
+    api_secret=config('API_SECRET'),
 )
 
 MIDDLEWARE = [

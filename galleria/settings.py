@@ -13,9 +13,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import cloudinary
 import dj_database_url
-from decouple import config,Csv
+from decouple import config, Csv
 
-MODE=config("MODE", default="dev")
+MODE = config("MODE", default="dev")
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,7 +31,6 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -47,9 +46,9 @@ INSTALLED_APPS = [
 ]
 
 cloudinary.config(
-  cloud_name = "dxrxqqdoc",
-  api_key = "649414433849725",
-  api_secret = "bU_lyM4us1cWy3zKp3sED7ievAY",
+    cloud_name="durqws6pc",
+    api_key="622926572274923",
+    api_secret="q-wI_Li-iA52EcvFohyYr6Nd8E4",
 )
 
 MIDDLEWARE = [
@@ -87,25 +86,27 @@ WSGI_APPLICATION = 'galleria.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-if config('MODE')=="dev":
-   DATABASES = {
-       'default': {
-           'ENGINE': 'django.db.backends.postgresql_psycopg2',
-           'NAME': config('DB_NAME'),
-           'USER': config('DB_USER'),
-           'PASSWORD': config('DB_PASSWORD'),
-           'HOST': config('DB_HOST'),
-       }
+if config('MODE') == "dev":
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': config('DB_NAME'),
+            'USER': config('DB_USER'),
+            'PASSWORD': config('DB_PASSWORD'),
+            'HOST': config('DB_HOST'),
+            'PORT': 5432,
+        }
 
-   }
+    }
 # production
 else:
-   DATABASES = {
-       'default': dj_database_url.config(
-           default=config('DATABASE_URL')
-       )
-   }
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=config('DATABASE_URL')
+        )
+    }
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
@@ -144,7 +145,9 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
+# https://docs.djangoproject.com/en/1.11/howto/static-files/
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
@@ -152,6 +155,6 @@ STATICFILES_DIRS = [
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# configuring the location for media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-

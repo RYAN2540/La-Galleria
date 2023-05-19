@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Chewy&display=swap');
 
@@ -40,8 +41,9 @@ nav {
 
 #brand {
     font-size: 3rem;
-    font-family: 'Chewy', cursive;
+    font-family: 'Yatra One', cursive;
     letter-spacing: 1px;
+    background-color: #202C39;
 }
 
 .nav-item {
@@ -103,7 +105,7 @@ blockquote {
 }
 
 blockquote footer {
-    color: orangered;
+    color: #B8B08D;
 }
 
 .content {
@@ -180,7 +182,7 @@ p {
     line-height: 48px;
     text-align: center;
     border-radius: 50%;
-    background-color: orangered;
+    background-color: #B8B08D;
     transition: all 0.3s ease;
     outline: 0;
     z-index: 2;
@@ -211,7 +213,7 @@ p {
 .badge {
     margin-top: 1%;
     font-size: 1rem;
-    background-color: orangered;
+    background-color: #B8B08D;
     margin-bottom: 1%;
 }
 

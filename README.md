@@ -71,7 +71,7 @@ Technologies used to develop this application:
 
 ## Support and contact details
 
-Should you be unable to access the website, have any recommendations and/or questions, feel free to email me: [ryankrotich@gmail.com](mailto:austinbrian005@gmail.com)
+Should you be unable to access the website, have any recommendations and/or questions, feel free to email me [ryankrotich@gmail.com](mailto:ryankrotich@gmail.com)
 
 ### [License](LICENSE)
 

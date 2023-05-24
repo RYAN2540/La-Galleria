@@ -36,7 +36,7 @@ Spotted an image you'd love to share? The application allows for image sharing. 
 
 ## Live link
 
-Visit the application on https://lagalleria.herokuapp.com/.
+Visit the application on https://lagalleria.up.railway.app/.
 
 ## Development
 

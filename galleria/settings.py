@@ -62,6 +62,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://lagalleria.up.railway.app']
+
 ROOT_URLCONF = 'galleria.urls'
 
 TEMPLATES = [
